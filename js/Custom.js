@@ -25,7 +25,7 @@ $(document).ready(function () {
      
     /***load foteer and nav ***/
     
-    $("#encabezado").load("encabezado.html");    
+    $("#encabezado").load("Encabezado.html");    
     $("#pie").load("Pie.html");       
     
     $("#clickScroll").on('click', function (event) {
