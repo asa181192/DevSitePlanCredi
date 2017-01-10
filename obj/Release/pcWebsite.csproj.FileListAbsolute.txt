@@ -1,0 +1,5 @@
+C:\Users\User\Documents\Visual Studio 2013\Projects\pcWebsite\pcWebsite\bin\pcWebsite.dll.config
+C:\Users\User\Documents\Visual Studio 2013\Projects\pcWebsite\pcWebsite\bin\pcWebsite.dll
+C:\Users\User\Documents\Visual Studio 2013\Projects\pcWebsite\pcWebsite\bin\pcWebsite.pdb
+C:\Users\User\Documents\Visual Studio 2013\Projects\pcWebsite\pcWebsite\obj\Release\pcWebsite.dll
+C:\Users\User\Documents\Visual Studio 2013\Projects\pcWebsite\pcWebsite\obj\Release\pcWebsite.pdb

@@ -34,11 +34,11 @@ namespace PlanCrediSitioWeb
 
         public void sendEmail ()  // Enviar informacion para correo mediante Zoho . 
         {
-            try
-            {
+                string user = System.Web.Configuration.WebConfigurationManager.AppSettings["user"].ToString();
+                string pass = System.Web.Configuration.WebConfigurationManager.AppSettings["pass"].ToString();
                 MailMessage mail = new MailMessage();
-                mail.From = new MailAddress("sistemas@plancredi.com");
-                mail.To.Add("sistemas@plancredi.com");               
+                mail.From = new MailAddress(user);
+                mail.To.Add(user);               
                 if (stream != null)
                 {                    
                     mail.Body = "Nombre: " + this.Name + "<br>Correo: " +
@@ -58,15 +58,11 @@ namespace PlanCrediSitioWeb
                 mail.Priority = MailPriority.High;
                 SmtpClient smtp = new SmtpClient("smtp.zoho.com", 587);
                 smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
-                smtp.Credentials = new NetworkCredential("sistemas@plancredi.com", "sistemas2016");
+                smtp.Credentials = new NetworkCredential(user, pass);
                 smtp.EnableSsl = true;
-
                 smtp.Send(mail);
-            }
-            catch (Exception ex)
-            {
-                System.Diagnostics.Debug.WriteLine("Error: " + ex);
-            }
+            
+            
         }
     }
 }

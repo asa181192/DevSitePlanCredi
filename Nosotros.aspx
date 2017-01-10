@@ -1,0 +1,126 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Nosotros.aspx.cs" Inherits="pcWebsite.Nosotros" %>
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Plan Credi</title>
+    <link rel="stylesheet" href="style/flexboxgrid.min.css" type="text/css" />
+    <link href="style/bootstrap.css" rel="stylesheet">
+    <link href="style/styles.min.css" rel="stylesheet" />
+    <link href="style/Normalize.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="apple-touch-icon" sizes="57x57" href="images/icon/apple-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="images/icon/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="images/icon/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="images/icon/apple-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="images/icon/apple-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="images/icon/apple-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="images/icon/apple-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="images/icon/apple-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/icon/apple-icon-180x180.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="images/icon/android-icon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/icon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="images/icon/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="images/icon/favicon-16x16.png" />
+</head>
+<body>
+
+    <header>
+        <div id="encabezado"></div>
+    </header>
+    <div class="main">
+        <div class="subheader">
+            <h3>CONOCENOS</h3>
+        </div>
+        <section class="bgGray">
+            <div class="container">
+                <div class="padding">
+                    <h2 class="textAlign">Nosotros</h2>
+                    <div class="row center-md middle-md">
+                        <div class="col-xs-12 col-sm-8">
+
+                            <p class="lgsize GrayText">
+                                <br /> Somos un grupo de Inversionistas Mexicanos con más de 20 años de experiencia en el sector financiero, decidimos crear PLAN CREDI S.A. DE C.V. SOFOM E.N.R.
+
+                                Con el proposito de apoyar a todos los pensionados y jubilados con planes de financiamiento a su medida.
+                            </p>
+
+                        </div>
+                        <div class="col-xs-12 col-sm-4">
+                            <img src="images/Nosotros.jpg" style="height:250px;width:300px;" class="img-responsive img-circle CentrarImg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="padding">
+                <div class="container">
+                    <h2 class="textAlign">Misión</h2>
+                    <div class="row center-md middle-md">
+                        <div class="col-xs-12 col-sm-4">
+                            <img src="images/Mision.jpg" style="height:250px;width:300px;" class="img-responsive img-circle CentrarImg">
+                        </div>
+                        <div class="col-xs-12 col-sm-8">
+                            <p class="lgsize GrayText">
+                                <br />Ofrecer servicios financieros que mejoren la calidad de vida de nuestros clientes, además de la innovación de productos  a corto o mediano plazo que permitan cubrir sus necesidades de forma INMEDIATA.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </section>
+        <section class="bgGray">
+            <div class="padding">
+                <div class="container">
+                    <h2 class="textAlign">Visión</h2>
+                    <div class="row center-md middle-md">
+                        <div class="col-xs-12 col-sm-8">
+
+                            <p class="lgsize GrayText">
+                                <br /> Posicionarnos en el mercado como la mejor opción financiera para nuestros clientes. Apoyados en la mejora continua y la amplia experiencia de nuestro personal para brindar el mejor asesoramiento financiero.
+                            </p>
+                        </div>
+                        <div class="col-xs-12 col-sm-4">
+                            <img src="images/vision.png" style="height:250px;width:300px;" class="img-responsive img-circle CentrarImg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="padding">
+                <div class="container">
+                    <h2 class="textAlign">Valores</h2>
+                    <div class="row center-md middle-md">
+                        <div class="col-xs-12 col-sm-4">
+                            <img src="images/valorescorporativos.jpg" style="height:250px;width:300px;" class="img-responsive img-circle CentrarImg">
+                        </div>
+                        <div class="col-xs-12 col-sm-8">
+                            <p class="lgsize GrayText">
+                                <br />Nuestro enfoque de Servicio, nuestra actitud,
+                                la pasión por nuestro trabajo, el compromiso con la calidad y la responsabilidad  nos permite brindarte una atención personalizada
+                                y oportuna a nuestros clientes para ofrecerle beneficios que resuelvan sus necesidades  de inmediato creando al mismo tiempo un vínculo de confianza
+                                y permanencia con PLAN CREDI.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+       
+    </div>
+    <div id="pie"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/Custom.js"></script>
+    <script src="js/Carousel.js"></script>
+</body>
+</html>
+
+

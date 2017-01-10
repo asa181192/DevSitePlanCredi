@@ -21,9 +21,29 @@ namespace PlanCrediSitioWeb
 
         protected void cSubmitBolsa_Click(object sender, EventArgs e)
         {            
-            correo = new Email(this.cNombreBolsa.Text,this.cTelefonoBolsa.Text,this.cCorreoBolsa.Text,this.cPuestoBolsa.Text,this.cCV);
-            correo.sendEmail();
-            cleanTextBox();
+            try
+            {
+                correo = new Email(this.cNombreBolsa.Text,this.cTelefonoBolsa.Text,this.cCorreoBolsa.Text,this.cPuestoBolsa.Text,this.cCV);
+                correo.sendEmail();                
+                string message = "Informacion enviada.";
+                string script = "window.onload = function(){ alert('";
+                script += message;
+                script += "')};";
+                ClientScript.RegisterStartupScript(this.GetType(), "SuccessMessage", script, true); 
+            }
+            catch (HttpException ex) 
+            {
+                string message = "Ocurrio un problema , favor de intentarlo nuevamente.";
+                string script = "window.onload = function(){ alert('";
+                script += message;
+                script += "')};";
+                ClientScript.RegisterStartupScript(this.GetType(), "SuccessMessage", script, true); 
+            }
+            finally
+            {
+                cleanTextBox();
+            }
+
         }     
         
         private void cleanTextBox ()

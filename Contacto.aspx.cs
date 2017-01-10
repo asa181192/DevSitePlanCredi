@@ -22,10 +22,35 @@ namespace PlanCrediSitioWeb
      
         protected void cSubmitContacto_Click(object sender, EventArgs e)
         {
-            correo = new Email(this.cAsuntoContacto.Text , this.cComentarioContacto.Text, 
+            try
+            {
+                correo = new Email(this.cAsuntoContacto.Text , this.cComentarioContacto.Text, 
                 this.cTelefonoContacto.Text , this.cNombreContacto.Text, this.cCorreoContacto.Text);
-            correo.sendEmail();            
-            cleanTextBox();
+                correo.sendEmail();            
+                string message = "Informacion enviada.";
+                string script = "window.onload = function(){ alert('";
+                script += message;
+                script += "')};";
+                ClientScript.RegisterStartupScript(this.GetType(), "SuccessMessage", script, true); 
+
+            }
+            catch (HttpException ex) 
+            {
+                string message = "Ocurrio un problema , favor de intentarlo nuevamente.";
+                string script = "window.onload = function(){ alert('";
+                script += message;
+                script += "')};";
+                ClientScript.RegisterStartupScript(this.GetType(), "SuccessMessage", script, true); 
+            }
+            finally
+            {
+                cleanTextBox();
+            }
+           
+            
+           
+                        
+         
          }
 
         private void cleanTextBox () 
